@@ -22,7 +22,7 @@
     </form>
     
     <h2 class="text-center my-4">Elenco dei treni</h2>
-    <div class="d-flex flex-wrap gap-2 justify-content-center">
+    <div class="row row-cols-1 row-cols-md-3 g-2 justify-content-center mt-2">
         @foreach ($trains as $train)
             <x-card>
                 <x-slot:train_number>{{$train['train_number']}}</x-slot:train_number>
